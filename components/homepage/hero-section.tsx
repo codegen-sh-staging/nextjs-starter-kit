@@ -7,14 +7,27 @@ export default function HeroSection() {
     <section className="py-20">
       <div className="relative z-10 mx-auto w-full max-w-2xl px-6 lg:px-0">
         <div className="relative text-center">
-          <p className="text-3xl">🔥</p>
-          <h1 className="mx-auto mt-12 max-w-xl text-balance text-5xl font-medium">
-            Nextjs Starter Kit
+          <div className="animate-bounce">
+            <p className="text-4xl">🚀</p>
+          </div>
+          <h1 className="mx-auto mt-12 max-w-xl text-balance text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-pulse">
+            Next.js SaaS Starter Kit 2.0
           </h1>
-          <p className="text-muted-foreground mx-auto mb-6 mt-4 text-balance text-xl">
-            This powerful starter kit is designed to help you launch your SAAS
-            application quickly and efficiently.
+          <p className="text-muted-foreground mx-auto mb-6 mt-6 text-balance text-xl leading-relaxed">
+            Ship your SaaS faster than ever with authentication, payments, AI integration, 
+            and modern UI components. From idea to production in minutes, not months.
           </p>
+          <div className="flex items-center justify-center gap-2 mb-8">
+            <span className="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800 dark:bg-green-900 dark:text-green-200">
+              ✅ Production Ready
+            </span>
+            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+              ⚡ Turbopack Enabled
+            </span>
+            <span className="inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800 dark:bg-purple-900 dark:text-purple-200">
+              🤖 AI Powered
+            </span>
+          </div>
           <div className="flex flex-col items-center gap-2 *:w-full sm:flex-row sm:justify-center sm:*:w-auto">
             <Button asChild variant="default" size="sm">
               <Link href="/dashboard" prefetch={true}>

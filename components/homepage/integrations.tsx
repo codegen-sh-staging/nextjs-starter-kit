@@ -11,17 +11,28 @@ import * as React from "react";
 
 export default function Integrations() {
   return (
-    <section>
-      <div className="pt-12 pb-32">
-        <div className="mx-auto max-w-5xl px-6">
-          <div>
-            <h2 className="text-balance text-3xl font-semibold md:text-4xl">
-              Built with the best tools
+    <section className="bg-gradient-to-b from-background to-muted/10">
+      <div className="pt-20 pb-32">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-balance text-4xl font-bold md:text-5xl mb-4 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent dark:from-gray-100 dark:to-gray-400">
+              Built with Industry Leaders
             </h2>
-            <p className="text-muted-foreground mt-3 text-lg">
-              Launch your project with confidence, knowing that you&apos;re
-              using the best tools available.
+            <p className="text-muted-foreground mt-3 text-xl max-w-3xl mx-auto">
+              Launch your project with confidence using battle-tested tools 
+              trusted by millions of developers worldwide.
             </p>
+            <div className="mt-6 flex items-center justify-center gap-2">
+              <span className="text-sm text-muted-foreground">Powered by</span>
+              <div className="flex items-center gap-1">
+                <span className="text-yellow-500">⭐</span>
+                <span className="text-yellow-500">⭐</span>
+                <span className="text-yellow-500">⭐</span>
+                <span className="text-yellow-500">⭐</span>
+                <span className="text-yellow-500">⭐</span>
+              </div>
+              <span className="text-sm text-muted-foreground">rated tools</span>
+            </div>
           </div>
 
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
